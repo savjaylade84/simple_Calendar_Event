@@ -11,6 +11,6 @@
 > localhost:5000
 #### it also prompt in the terminal once you run the flask
 #### Then to make the database work you need to download the MySQL Server
-#### Then the Run the SQL Script file name "importDatabase.sql" 
+#### Then run or execute the SQL script file name "importDatabase.sql" 
 #### For configuration of the database information like password or username go to
 #### path file static/database then edit the yaml file
