@@ -9,3 +9,5 @@
 > python3 "__init__.py"
 #### To make the database work you need to download the MySQL Server
 #### Run the SQL Script file name "importDatabase.sql" 
+#### For configuration of the database information like password or username go to
+#### path file static/database then edit the yaml file
