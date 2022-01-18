@@ -9,7 +9,8 @@
 > python3 "__init__.py"
 #### Then go to the port that the flask server provided like example
 > localhost:5000
-#### To make the database work you need to download the MySQL Server
-#### Run the SQL Script file name "importDatabase.sql" 
+#### it also prompt in the terminal once you run the flask
+#### Then to make the database work you need to download the MySQL Server
+#### Then the Run the SQL Script file name "importDatabase.sql" 
 #### For configuration of the database information like password or username go to
 #### path file static/database then edit the yaml file
