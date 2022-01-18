@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Calendar</title>
+</head>
+<body>
+
+        <form action="/home" class="form" method="POST">
+            <div class="calendar">
+                <div class="process">
+                    <p class="status">
+                        {{status}}
+                    </p>
+                </div>
+                <div class="Years">
+                    <div class="next"></div>
+                    <div class="year">
+                        <p>{{year}}</p>
+                    </div>
+                    <div class="back"></div>
+                </div>
+                <div class="input-form">
+                    <div class="input-event">
+                        <span>
+                            <label for="event">Event</label>
+                            <input type="text" placeholder="Event" name="event" id="event" class="event input" data-event="" required>
+                        </span>
+                        <span>
+                            <label for="event">To</label>
+                            <input type="text" placeholder="From event" name="fromDate" id="fromDate" class="fromDate input" data-from="" required>
+                        </span>
+                        <span>
+                            <label for="text">From</label>
+                            <input type="text" placeholder="To Event" name="toDate" id="toDate" class="toDate input" data-to="" required>
+                        </span>  
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Add" id="add" class="add">
+                        <input type="submit" value="Override" id="override" class="override">
+                    </div>
+                </div>
+                <div class="show-event">
+                    <div class="buttons">
+                        <input type="submit" value="Months" name="Months" id="Months" data-Months="">
+                    </div>
+                    <div>
+                        <div class="current-month">
+    
+                        </div>
+                        <div class="text-days">
+                            <ul>
+                                {% for day in ['Sunday','Monday','Tuesday','Wensday','Thursday','Friday','Saturday'] %}
+                                    <li class="text-day">{{day}}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="num-days">
+                            <ul>
+                                {% for day in range(0,31) %}
+                                    <li class="num-day">{{day}}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+        <script src="{{url_for('static',filename='javascript/main.js')}}" defer></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+body {
+  padding: 0rem;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  color: whitesmoke;
+}
+
+input {
+  color: whitesmoke;
+}
+
+.calendar {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #222121;
+  margin: 10vh auto;
+  padding: 1rem;
+}
+
+.Years {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.next::before {
+  content: '<';
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+}
+
+.back::before {
+  content: '>';
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+}
+
+.back, .next {
+  height: 0.7rem;
+  width: 0.7rem;
+  padding: 0.7rem;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+.back:hover::before, .next:hover::before, .next:hover, .back:hover {
+  background-color: #b8b6b6;
+}
+
+.status {
+  text-align: center;
+  font-size: larger;
+  color: green;
+}
+
+.input-event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  padding: 0rem 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-event span {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  width: auto;
+}
+
+.input-event span input {
+  background-color: transparent;
+  border: 3px solid whitesmoke;
+}
+
+.input-form {
+  background-color: #2b2a2a;
+  padding: 1.5rem 0rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: auto;
+  padding: 0.5rem;
+  margin: 1rem 0rem;
+  border: 0px;
+  border-radius: 0.2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.text-days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-days ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  padding: 0.5em 1em;
+  justify-items: center;
+}
+
+.text-days ul li {
+  padding: 0.5rem 1rem;
+}
+
+.Years {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.Years .next, .Years .back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.year {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0rem 1rem;
+  text-align: center;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.num-days ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  padding: 0em 1em;
+  justify-items: center;
+}
+
+.num-days ul li {
+  padding: 0.5em 1em;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.num-days ul li:hover {
+  background-color: #2b2a2a;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons input {
+  padding: 0.6rem 1rem;
+  border: 3px solid whitesmoke;
+  border-radius: 0.2rem;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: medium;
+  margin: 0rem 1rem;
+  cursor: pointer;
+}
+
+.show-event {
+  padding: 1rem 0rem;
+}
+/*# sourceMappingURL=style.css.map */
