@@ -7,6 +7,7 @@ CREATE TABLE Event(
     fromDate DATETIME
 );
 
+
 USE CalendarEvent2;
 
 -- for removing dynamic and direct query in the frontend 
