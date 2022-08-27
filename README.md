@@ -4,8 +4,8 @@
 1. To Run this web application you need to download the dependencies
 > pip3 install flask flask_mysqldb yaml
 2. To Run Flask Web application
-> python "__init__.py"
--- OR --
+> python "__init__.py"</br>
+-- OR -- </br>
 > python3 "__init__.py"
 3. Then go to the port that the flask server provided like example
 > localhost:5000
