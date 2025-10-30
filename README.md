@@ -1,16 +1,45 @@
+# 🗓️ simple_Calendar_Event
+*A minimal Flask + MySQL web app for adding, viewing, and managing calendar events.*
 
-## Calendar Event
-###  only function is adding event in the mysql database
-1. To Run this web application you need to download the dependencies
-> pip3 install flask flask_mysqldb yaml
-2. To Run Flask Web application
-> python "__init__.py"</br>
--- OR -- </br>
-> python3 "__init__.py"
-3. Then go to the port that the flask server provided like example
-> localhost:5000
-4. it also prompt in the terminal once you run the flask
-5. Then to make the database work you need to download the MySQL Server
-6. Then run or execute the SQL script file name "importDatabase.sql" 
-7. For configuration of the database information like password or username go to</br>
-   path file static/database then edit the yaml file
+[![GitHub Stars](https://img.shields.io/github/stars/savjaylade84/simple_Calendar_Event?style=for-the-badge)](https://github.com/savjaylade84/simple_Calendar_Event/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/savjaylade84/simple_Calendar_Event?style=for-the-badge)](https://github.com/savjaylade84/simple_Calendar_Event/issues)
+![Python](https://img.shields.io/badge/python-3.x-blue?style=for-the-badge)
+![Flask](https://img.shields.io/badge/Flask-2.x-green?style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-8.x-orange?style=for-the-badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+---
+
+## 🚀 Overview
+**simple_Calendar_Event** is a lightweight calendar web app built with **Flask** and **MySQL**.  
+It allows users to **add, view, and store events** in a clean, simple interface. Perfect for beginners learning Flask CRUD operations.
+
+---
+
+## ✨ Features
+- 📅 Interactive calendar interface (HTML, JS, SASS)
+- 🗃️ Event data stored in MySQL
+- ⚙️ Flask back-end for easy integration and customization
+- 💾 Simple database schema for quick setup
+- 🧩 Clean, modular structure — ideal for learning or extending
+
+---
+
+## 🧰 Tech Stack
+| Layer | Technology |
+|:------|:------------|
+| Front-End | HTML5, CSS/SASS, JavaScript |
+| Back-End | Flask (Python) |
+| Database | MySQL |
+| Template Engine | Jinja2
+
+
+
+
+
+
+
+
+
+
+
